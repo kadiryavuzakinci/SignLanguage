@@ -21,28 +21,30 @@ This project aims to bridge the communication gap for hearing-impaired individua
     ```
 3. **Set up the ChatGPT API Key:**
     - Edit a `config.yaml` file in the root directory.
-    - Add your ChatGPT API key to the `config.yaml` file in the following format:
+    - Add your ChatGPT API key to the `config.yaml` file in the following format: 
     ```yaml
     api_key: "sk-"
     ```
 
     ## Usage
 
-1. **Run the main script:**
+1. **Train your model**
+   
+3. **Run the main script:**
     ```sh
     python main.py
     ```
 
-2. **Object Detection:**
+3. **Object Detection:**
     - The system will start the camera feed and begin detecting objects.
     - Detected classes will be written to the `words.txt` file.
 
-3. **Generate Meaningful Sentences:**
+4. **Generate Meaningful Sentences:**
     - The words in the `words.txt` file are sent to ChatGPT every 10 seconds.
     - ChatGPT processes the words and creates meaningful sentences.
     - These sentences are written to the `meaningful.txt` file.
 
-4. **Text to Speech:**
+5. **Text to Speech:**
     - The sentences in `meaningful.txt` are converted to audio.
     - The audio output is played, allowing for verbal communication.
 
